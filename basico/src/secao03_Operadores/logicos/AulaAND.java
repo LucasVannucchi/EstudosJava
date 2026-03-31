@@ -37,6 +37,18 @@ public class AulaAND {
 
     public static void main(String[] args) {
 
+        //Resultado verdadeiro, pois as duas condições são verdadeiras
+        int idade = 21;
+        float salario = 2500f;
+        boolean isDentroDaLei = idade > 18 && salario >= 2500;
+        System.out.println(isDentroDaLei);
 
+        //Resultado falso, pois uma das duas condições é falsa
+        boolean isMaiorDeIdadeDentroDaLei = idade < 18 && salario >= 2500;
+        System.out.println(isMaiorDeIdadeDentroDaLei);
+
+        //Resultado falso, pois as duas condições são falsas
+        boolean isDentroDaLeiMaiorDeIdadeESalarioMenor = idade < 18 && salario  < 2500;
+        System.out.println(isDentroDaLeiMaiorDeIdadeESalarioMenor);
     }
 }

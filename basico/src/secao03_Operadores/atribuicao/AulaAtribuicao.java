@@ -1,22 +1,17 @@
 package secao03_Operadores.atribuicao;
 
 /**
- * <h2>Operadores de Atribuição em Java</h2>
+ * <h2>Operadores de Atribuição e Incremento em Java</h2>
  *
  * <p>
  * Operadores de atribuição são utilizados para definir ou atualizar o valor
- * de uma variável. O operador de atribuição mais comum é o <code>=</code>,
- * que atribui o valor da direita para a variável localizada à esquerda.
+ * de uma variável. O operador mais comum é o <code>=</code>, que atribui
+ * à variável da esquerda o valor da expressão à direita.
  * </p>
  *
  * <p>
- * Além do operador básico, Java possui operadores de atribuição compostos
- * que combinam uma operação aritmética com a atribuição do resultado à
- * própria variável.
- * </p>
- *
- * <p>
- * Os principais operadores de atribuição compostos são:
+ * Java também possui operadores de atribuição compostos, que combinam
+ * uma operação aritmética com a atribuição do resultado à própria variável.
  * </p>
  *
  * <ul>
@@ -28,14 +23,22 @@ package secao03_Operadores.atribuicao;
  * </ul>
  *
  * <p>
- * Esses operadores são frequentemente utilizados para tornar o código mais
- * conciso e legível, evitando a repetição da mesma variável em uma operação.
+ * Além disso, Java possui os operadores de <strong>incremento</strong> (<code>++</code>)
+ * e <strong>decremento</strong> (<code>--</code>), que aumentam ou diminuem o valor
+ * de uma variável em uma unidade.
  * </p>
  *
  * <p>
- * No método <code>main</code> desta classe são apresentados exemplos simples
- * demonstrando o uso do operador de atribuição padrão e dos operadores
- * compostos.
+ * Esses operadores podem ser utilizados em duas formas:
+ * </p>
+ *
+ * <ul>
+ *   <li><strong>Pós-incremento:</strong> <code>contador++</code> (usa o valor atual e depois incrementa)</li>
+ *   <li><strong>Pré-incremento:</strong> <code>++contador</code> (incrementa primeiro e depois usa o valor)</li>
+ * </ul>
+ *
+ * <p>
+ * O método <code>main</code> demonstra exemplos práticos de cada um desses operadores.
  * </p>
  */
 public class AulaAtribuicao {
@@ -48,12 +51,35 @@ public class AulaAtribuicao {
         numero = 20;
 
         // Operadores de atribuição compostos
-        numero += 5;  // equivalente a: numero = numero + 5
-        numero -= 2;  // equivalente a: numero = numero - 2
-        numero *= 3;  // equivalente a: numero = numero * 3
-        numero /= 2;  // equivalente a: numero = numero / 2
-        numero %= 4;  // equivalente a: numero = numero % 4
+        numero += 5;  // numero = numero + 5
+        numero -= 2;  // numero = numero - 2
+        numero *= 3;  // numero = numero * 3
+        numero /= 2;  // numero = numero / 2
+        numero %= 4;  // numero = numero % 4
 
-        System.out.println("Resultado final: " + numero);
+        System.out.println("Resultado após atribuições: " + numero);
+
+        int contador = 1;
+
+        // Pós-incremento: usa o valor atual e depois incrementa
+        System.out.println("Pós-incremento: " + contador++);
+        System.out.println("Valor após pós-incremento: " + contador);
+
+        // Pré-incremento: incrementa primeiro e depois usa o valor
+        System.out.println("Pré-incremento: " + ++contador);
+
+        // Pós-decremento
+        System.out.println("Pós-decremento: " + contador--);
+        System.out.println("Valor após pós-decremento: " + contador);
+
+        // Pré-decremento
+        System.out.println("Pré-decremento: " + --contador);
+
+        int contador2 = 0;
+
+        System.out.println(contador2++); // imprime 0, depois contador2 vira 1
+        System.out.println(contador2);   // imprime 1
+        System.out.println(++contador2); // primeiro vira 2, depois imprime 2
+        System.out.println(contador2);   // imprime 2
     }
 }

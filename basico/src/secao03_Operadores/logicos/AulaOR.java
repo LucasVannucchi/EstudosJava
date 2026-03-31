@@ -38,6 +38,18 @@ public class AulaOR {
 
     public static void main(String[] args) {
 
+        //Resultado verdadeiro, pois as duas condições são verdadeiras
+        int idade = 21;
+        float salario = 2500f;
+        boolean isDentroDaLei = idade > 18 && salario >= 2500;
+        System.out.println(isDentroDaLei);
 
+        //Resultado verdadeiro, pois uma das duas condições é verdadeiro
+        boolean isMaiorDeIdadeDentroDaLei = idade < 18 || salario >= 2500;
+        System.out.println(isMaiorDeIdadeDentroDaLei);
+
+        //Resultado falso, pois as duas condições são falsas
+        boolean isDentroDaLeiMaiorDeIdadeESalarioMenor = idade < 18 || salario  < 2500;
+        System.out.println(isDentroDaLeiMaiorDeIdadeESalarioMenor);
     }
 }
