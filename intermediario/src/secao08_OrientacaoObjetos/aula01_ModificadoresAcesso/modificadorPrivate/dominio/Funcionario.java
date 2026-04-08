@@ -1,4 +1,4 @@
-package secao08_OrientacaoObjetos.modificadoresAcesso.modificadorPrivate.dominio;
+package secao08_OrientacaoObjetos.aula01_ModificadoresAcesso.modificadorPrivate.dominio;
 
 public class Funcionario {
     private String nome;

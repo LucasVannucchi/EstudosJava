@@ -1,6 +1,6 @@
-package secao08_OrientacaoObjetos.modificadoresAcesso.modificadorPrivate.teste;
+package secao08_OrientacaoObjetos.aula01_ModificadoresAcesso.modificadorPrivate.teste;
 
-import secao08_OrientacaoObjetos.modificadoresAcesso.modificadorPrivate.dominio.Pessoa;
+import secao08_OrientacaoObjetos.aula01_ModificadoresAcesso.modificadorPrivate.dominio.Pessoa;
 
 /**
 

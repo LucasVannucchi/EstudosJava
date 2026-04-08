@@ -1,4 +1,4 @@
-package secao08_OrientacaoObjetos.modificadoresAcesso.modificadorPublic.dominio;
+package secao08_OrientacaoObjetos.aula01_ModificadoresAcesso.modificadorPublic.dominio;
 
 /**
 

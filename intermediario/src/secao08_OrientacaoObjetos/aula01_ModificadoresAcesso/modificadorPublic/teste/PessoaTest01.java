@@ -1,6 +1,6 @@
-package secao08_OrientacaoObjetos.modificadoresAcesso.modificadorPublic.teste;
+package secao08_OrientacaoObjetos.aula01_ModificadoresAcesso.modificadorPublic.teste;
 
-import secao08_OrientacaoObjetos.modificadoresAcesso.modificadorPublic.dominio.Pessoa;
+import secao08_OrientacaoObjetos.aula01_ModificadoresAcesso.modificadorPublic.dominio.Pessoa;
 
 /**
 
